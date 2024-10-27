@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* 애니메이션을 위한 배경 설정 */
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: backgroundChange 5s infinite alternate; /* 애니메이션 추가 */
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: rgb(255, 240, 71);
+  }
+}
+.container {
+  width: 80%;
+  max-width: 800px;
+  text-align: left; /* 왼쪽 정렬로 변경 */
+  color: red;
+}
+
+img {
+  max-width: 30%;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  color: red;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: red;
+  margin-top: 20px;
+}
+
+.intro-text {
+  position: relative;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 15px 0;
+  color: darkred;
+  padding: 20px;
+  /* 배경 이미지 설정 */
+  background-image: url("/asset/straw.png"); /* 이미지 경로 */
+  background-size: 30%; /* 이미지 크기 맞춤 */
+  background-position: center;
+  background-repeat: no-repeat; /* 반복 방지 */
+  opacity: 0.9; /* 배경 투명도 조절 */
+  /* 텍스트가 배경 이미지와 겹치지 않도록 설정 */
+  /* 텍스트 위로 배치 */
+}
+.intro-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: whitesmoke;
+  opacity: 0.7; /* 배경 색상과 투명도 설정 */
+  z-index: 1;
+}
+.intro-text p {
+  position: relative;
+  z-index: 2;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: red;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a.highlight {
+  font-weight: bold;
+  font-style: italic;
+  color: darkblue;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: grey;
+  margin-top: 20px;
+  border-top: 1px solid #999;
+  padding-top: 10px;
+  margin-bottom: 50px;
+}/*# sourceMappingURL=style2.css.map */

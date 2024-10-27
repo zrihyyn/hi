@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(13, 166, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 세로 방향 중앙 정렬 */
+}
+
+img {
+    max-width: 70%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    font-size: 50px;
+    line-height: 50px;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#first {
+    color: lawngreen;
+    text-align: left;
+    top: 65%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+#second {
+    text-decoration: underline;
+    color: blue;
+    top: 90%;
+    left: 30%;
+    text-align: right;
+    transform: translateY(-50%);
+}
