@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: serif;
 }
 
 body {
@@ -49,4 +50,39 @@ p {
   left: 30%;
   text-align: right;
   transform: translateY(-50%);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  img {
+    max-width: 90%; /* 이미지 크기를 더 크게 설정 */
+  }
+  p {
+    font-size: 30px; /* 텍스트 크기를 줄임 */
+    line-height: 35px; /* 줄 간격 조정 */
+  }
+  #first {
+    top: 60%; /* 첫 번째 텍스트 위치 조정 */
+    left: 10%; /* 왼쪽 위치 조정 */
+    text-align: center; /* 중앙 정렬로 변경 */
+  }
+  #second {
+    top: 80%; /* 두 번째 텍스트 위치 조정 */
+    left: 20%; /* 왼쪽 위치 조정 */
+    text-align: center; /* 중앙 정렬로 변경 */
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 25px; /* 더 작은 화면에서는 텍스트 크기 추가로 줄임 */
+    line-height: 30px; /* 줄 간격 추가로 조정 */
+  }
+  #first {
+    top: 55%; /* 첫 번째 텍스트 위치 더 조정 */
+    left: 5%; /* 왼쪽 위치 조정 */
+  }
+  #second {
+    top: 75%; /* 두 번째 텍스트 위치 더 조정 */
+    left: 15%; /* 왼쪽 위치 조정 */
+  }
 }/*# sourceMappingURL=style.css.map */
