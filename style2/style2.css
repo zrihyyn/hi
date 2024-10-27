@@ -7,12 +7,11 @@
 }
 
 body {
-  /* 애니메이션을 위한 배경 설정 */
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: backgroundChange 5s infinite alternate; /* 애니메이션 추가 */
+  animation: backgroundChange 5s infinite alternate;
 }
 
 @keyframes backgroundChange {
@@ -26,7 +25,7 @@ body {
 .container {
   width: 80%;
   max-width: 800px;
-  text-align: left; /* 왼쪽 정렬로 변경 */
+  text-align: left;
   color: red;
 }
 
@@ -57,14 +56,11 @@ h2 {
   margin: 15px 0;
   color: darkred;
   padding: 20px;
-  /* 배경 이미지 설정 */
-  background-image: url("/asset/straw.png"); /* 이미지 경로 */
-  background-size: 30%; /* 이미지 크기 맞춤 */
+  background-image: url("/asset/straw.png");
+  background-size: 30%;
   background-position: center;
-  background-repeat: no-repeat; /* 반복 방지 */
-  opacity: 0.9; /* 배경 투명도 조절 */
-  /* 텍스트가 배경 이미지와 겹치지 않도록 설정 */
-  /* 텍스트 위로 배치 */
+  background-repeat: no-repeat;
+  opacity: 0.9;
 }
 .intro-text:before {
   content: "";
@@ -74,7 +70,7 @@ h2 {
   right: 0;
   bottom: 0;
   background-color: whitesmoke;
-  opacity: 0.7; /* 배경 색상과 투명도 설정 */
+  opacity: 0.7;
   z-index: 1;
 }
 .intro-text p {
@@ -113,4 +109,18 @@ footer {
   border-top: 1px solid #999;
   padding-top: 10px;
   margin-bottom: 50px;
+}
+
+/* 반응형 디자인 설정 */
+@media (max-width: 768px) {
+  .intro-text {
+    background-size: 60%; /* 배경 이미지 크기 증가 */
+    background-position: top; /* 위치 조정 */
+  }
+}
+@media (max-width: 480px) {
+  .intro-text {
+    background-size: 80%; /* 배경 이미지 크기 추가 증가 */
+    background-position: top center; /* 모바일에서 중앙 위치로 조정 */
+  }
 }/*# sourceMappingURL=style2.css.map */
